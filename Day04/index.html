@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and input</title>
+</head>
+<body>
+    <!-- forms,input,labels,block elements, inline element, input attributes -->
+        <form action="post">
+            <!-- first we use label tag  -->
+            <label for="userid">Enter your username</label><br>
+            <input id="userid" type="text"
+             placeholder="Enter your username" required><br>
+            <label for="passid">password</label><br>
+            <input id="passid" type="password" placeholder="Enter your password"  pattern="[a-zA-Z0-9]+"><br>
+            <label>Please select your gender</label><br>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label>Male</label><br>
+            <input type="radio" id="Female" name="gender" value="Female" required>
+            <label>Female</label><br>
+            <label>Date of birth:</label><br>
+            <input type="date"><br>
+            <label for="color">Pick your fav. color</label><br>
+            <input type="color" id="color"><br>
+            <label for="image">select an image</label><br>
+            <input type="image" src="image.png" alt="submit" width="60" height="30"  id="image">
+            <input type="submit" value="Submit" ><br>
+            <label>Please select your course</label>
+            <select id="course">
+                <option>Not Applicable</option>
+                <option>B.C.A</option>
+                <option>B.Sc</option>
+                <option>B.A</option>
+            </select>
+        </form>
+        <!-- inline elements -->
+        <span>this is <strong> boy in front of me</strong></span>
+        <a href="image.png">click on me</a>
+        <em>hey everyone ! how are you?</em>
+        <img src="image.png" alt="train img" width="44">
+        <!-- You can use CSS to style inline elements. However, some properties like width and height may not apply. 
+
+Here is an exhaustive list of the most used Inline Elements:
+
+    <a>
+    <abbr>
+    <acronym>
+    <button>
+    <br>
+    <big>
+    <bdo>
+    <b>
+    <cite>
+    <code>
+    <dfn>
+    <i>
+    <em>
+    <img>
+    <input>
+    <kbd>
+    <label>
+    <map>
+    <object>
+    <output>
+    <tt>
+    <time>
+    <samp>
+    <script>
+    <select>
+    <small>
+    <span>
+    <strong>
+    <sub>
+    <sup>
+    <textarea>-->
+        <!--here are some comment block element-->
+        <div>hey github family</div>
+        <div>div is a block element</div>
+        <h1>it is also a block element</h1>
+        <h1>it take a block </h1>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio fugit, porro illo odio tempore repellendus, quidem enim soluta molestiae quos in veritatis tenetur sint tempora consequuntur impedit doloribus dicta ratione.</p>
+        <!-- here are the list of block elements in html
+    <h1>,<h2>,<h3>,<h4>,<h5>,<h6> - Headings
+    <p> - Paragraphs
+    <hr> - Horizontal rule
+    <address> - Address information
+    <article> - Article content
+    <aside> - Sidebar content
+    <blockquote> - Block quotations
+    <canvas> - Drawing area
+    <dd> - Description in a description list
+    <div> - Generic container
+    <dl> - Description list
+    <dt> - Term in a description list
+    <fieldset> - Group of related form elements
+    <figcaption> - Caption for a figure
+    <figure> - Image or media with a caption
+    <footer> - Footer of a section or page
+    <form> - HTML form
+    <header> - Header of a section or page
+    <li> - List item
+    <main> - Main content of a document
+    <nav> - Navigation links
+    <noscript> - Alternate content when JavaScript is not enabled
+    <ol> - Ordered list
+    <ul> - Unordered list
+    <pre> - Preformatted text
+    <section> - Standalone section in a document
+    <table> - Table
+    <video> - Video content
+ -->
+</body>
+</html>
