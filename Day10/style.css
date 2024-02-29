@@ -1,0 +1,9 @@
+span{
+    color: aqua;
+    background-color: black;
+}
+span input{
+    color: rgb(255, 255, 255);
+    background-color:rgb(54, 54, 21);
+    border-radius: 5px;
+}
