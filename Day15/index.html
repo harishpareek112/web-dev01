@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            /* width: 233px; */
+            height: 10vh;
+            width: 80vw;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+        .container{
+            border: 2px solid black;
+            /* width: 233px; */
+            /* height: 80vh; */
+            min-height: 80vh;
+            width: 80vw;
+            /* font-size:18px; */
+            margin:23px auto;
+            background-color:aqua;
+        }
+        .container > div{
+            font-size: 2rem;
+            border: 2px solid red;
+            width:50%;
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            box-sizing: border-box;
+            margin: 23px auto;
+            border: 2px solid black;    
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is a box
+    </div>
+    <div class="container"><div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates temporibus pariatur ipsam possimus quam voluptate recusandae repellendus nostrum! Reprehenderit sapiente molestiae aliquam consequatur quae rem deleniti doloribus necessitatibus. Labore nulla porro hic saepe. Neque soluta recusandae deleniti! Blanditiis aliquam, expedita iste magni omnis similique, fugit corrupti reprehenderit asperiores in nulla, porro perspiciatis quia ut. Blanditiis, sint.<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ipsa, quibusdam aliquam quidem quae laborum doloremque voluptatibus cum veritatis quis.</div>
+    </div>
+    </div>
+    <div class="mycont">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero necessitatibus quisquam quasi, voluptatibus pariatur aliquam excepturi inventore, magnam repellendus, facere praesentium incidunt. Itaque optio vel, expedita exercitationem molestiae hic.
+        </p>
+    </div>
+    
+</body>
+</html>
