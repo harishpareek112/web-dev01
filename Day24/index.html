@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 solution</title>
+    <style>
+        :root {
+            --firstcolor: rgb(220, 203, 203);
+            --seccolor: rgb(38, 38, 202);
+            --elementcolor: white;
+            --defpad: 0px;
+            --defmag: 0px;
+        }
+
+        * {
+            padding: 0px;
+            margin: 2px 0px;
+        }
+
+        body {
+            background-image: url(Saharasunset-2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            background-color: var(--seccolor);
+            color: var(--elementcolor);
+            border: 2px solid rgb(3, 3, 132);
+            border-radius: 10px;
+            box-shadow: 5px 13px 34px rgb(136, 136, 237);
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul li {
+            padding: 2px 180px;
+            font-size: 24px;
+            font-family: Wix Madefor;
+            transition: 0.1s;
+        }
+
+        ul li:hover {
+            border: 2px solid rgb(174, 172, 164);
+            border-radius: 40px;
+            --seccolor: rgb(57, 57, 157);
+            background-color: var(--seccolor);
+        }
+
+        .contant {
+            background-color: aqua;
+        }
+
+        marquee {
+            font-size: 30px;
+            color: black;
+
+        }
+
+        .mainbox {
+            position: absolute;
+            display: flex;
+        }
+
+        h1 {
+            font-size: 100px;
+            text-align: center;
+        }
+
+        .box {
+            position: relative;
+            left: -23px;
+            border: 2px solid rgb(176, 175, 175);
+            background-color: rgb(255, 254, 254);
+            border-radius: 20px;
+            margin-left: 36px;
+            padding: 7px;
+            width: 21%;
+            height: 47%;
+            box-shadow: 6px 7px 14px black;
+
+        }
+
+        .box img {
+            width: 97%;
+            height: 67%;
+            border: 4px solid rgb(77, 73, 73);
+            border-radius: 20px;
+            transition: 0.9s;
+        }
+
+        .box h1 {
+            font-size: 50px;
+            font-weight: 10px;
+            font-family: sans-serif;
+        }
+
+        .box p {
+            padding: 10px;
+            font-size: 18px;
+            font-family: Cambria;
+        }
+
+        .box button {
+            border-radius: 20px;
+            background-color: rgb(109, 90, 13);
+            color: rgb(221, 208, 64);
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 116px;
+            border: 2px solid rgb(255, 223, 44);
+        }
+
+        .box1 {
+            position: relative;
+            left: -23px;
+            border: 2px solid rgb(176, 175, 175);
+            background-color: rgb(255, 254, 254);
+            border-radius: 20px;
+            margin-left: 36px;
+            padding: 7px;
+            width: 21%;
+            height: 47%;
+            box-shadow: 6px 7px 14px black;
+
+        }
+
+        .box1 img {
+            width: 97%;
+            height: 67%;
+            border: 4px solid rgb(77, 73, 73);
+            border-radius: 20px;
+        }
+
+        .box1 h1 {
+            font-size: 50px;
+            font-weight: 10px;
+            font-family: sans-serif;
+        }
+
+        .box1 p {
+            padding: 10px;
+            font-size: 16px;
+            font-family: Cambria;
+        }
+
+        .box1 button {
+            border-radius: 20px;
+            background-color: rgb(109, 90, 13);
+            color: rgb(221, 208, 64);
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 116px;
+            border: 2px solid rgb(255, 223, 44);
+        }
+
+        .box2 {
+            position: relative;
+            left: -23px;
+            border: 2px solid rgb(176, 175, 175);
+            background-color: rgb(255, 254, 254);
+            border-radius: 20px;
+            margin-left: 36px;
+            padding: 7px;
+            width: 21%;
+            height: 47%;
+            box-shadow: 6px 7px 14px black;
+
+        }
+
+        .box2 img {
+            width: 97%;
+            height: 67%;
+            border: 4px solid rgb(77, 73, 73);
+            border-radius: 20px;
+        }
+
+        .box2 h1 {
+            font-size: 50px;
+            font-weight: 10px;
+            font-family: sans-serif;
+        }
+        .box2 p{
+            padding: 10px;
+            font-size: 16px;
+            font-family: Cambria;
+        }
+
+        .box3 {
+            position: relative;
+            left: -23px;
+            border: 2px solid rgb(176, 175, 175);
+            background-color: rgb(255, 254, 254);
+            border-radius: 20px;
+            margin-left: 36px;
+            padding: 7px;
+            width: 21%;
+            height: 47%;
+            box-shadow: 6px 7px 14px black;
+        }
+
+        .box3 img {
+            width: 97%;
+            height: 67%;
+            border: 4px solid rgb(77, 73, 73);
+            border-radius: 20px;
+        }
+
+        .box3 h1 {
+            font-size: 50px;
+            font-weight: 10px;
+            font-family: sans-serif;
+        }
+        .box3 p{
+            padding: 10px;
+            font-size: 16px;
+            font-family: Cambria;
+        }
+        button{
+            border-radius: 20px;
+            background-color: rgb(109, 90, 13);
+            color: rgb(221, 208, 64);
+            font-size: 20px;
+            padding: 5px;
+            margin-left: 116px;
+            border: 2px solid rgb(255, 223, 44);
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>about us</li>
+            <li>Login</li>
+        </ul>
+    </nav>
+    <div class="contant">
+        <marquee scrollamount="10s" diration="left">A desert is a region of land that is very dry because it receives low amounts of precipitation (usually in the form of rain, but it may be snow, mist or fog), often has little coverage by plants, and in which streams dry up unless they are supplied by water from outside the area.</marquee>
+    </div>
+    <div class="mainbox">
+        <div class="box">
+            <img src="fbby1h_1.webp">
+            <h1>Sahara desert</h1>
+            <p>The Sahara is one of the harshest environments on Earth, covering 3.6 million square miles (9.4 million
+                square kilometers), an area about the size of the United States (including Alaska and Hawaii) and
+                spanning
+                nearly a third of the African continent</p>
+            <button>Read more</button>
+        </div>
+        <div class="box1">
+            <img src="thar-desert.jpg">
+            <h1>Thar desert</h1>
+            <p>The Great Indian Desert, well known as the Thar Desert, is a large and arid region in the northwestern
+                part of the Indian subcontinent. Covering about 200,000 km2 in terms of area it forms a natural boundary
+                between India and Pakistan. India has about 85% of the Thar Desert while the rest is in Pakistan.</p>
+            <button>Read more</button>
+        </div>
+        <div class="box2">
+            <img src="kalahari.jpeg">
+            <h1>Kalahari desert</h1>
+            <p>The Kalahari Desert is a large semi-arid sandy savanna in Southern Africa extending for 900,000 square kilometres, covering much of Botswana, as well as parts of Namibia and South Africa.</p>
+            <button>Read more</button>
+        </div>
+        <div class="box3">
+            <img src="greatbasin.jpg">
+            <h1>Great basin</h1>
+            <p>The Great Basin is the largest area of contiguous endorheic watersheds, those with no outlets to the ocean, in North America. It spans nearly all of Nevada, much of Utah, and portions of California, Idaho, Oregon, Wyoming, and Baja California.</p>
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+
+</html>
