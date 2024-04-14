@@ -7,6 +7,7 @@
     <title>CSS Grid</title>
     <style>
         .container {
+            position: absolute;
             width: 80vw;
             height: 100vh;
             border: 2px solid black;
@@ -24,17 +25,20 @@
         }
 
         .item {
+            position: relative;
             border: 2px solid red;
             height: 55px;
             width: 55px;
         }
 
         .item-4 {
+            background-color:lightblue;
             /* grid-row: 1/2;
             grid-column: pehla/t; */
         }
 
         .item-1 {
+            background-color: blue;
             /* grid-row: 1/2; */
             /* or you can do  */
             /* grid-row-start: 1;
