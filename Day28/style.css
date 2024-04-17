@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13, 13, 13);
+    color: white;
+}
+header{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(2px);
+}
+.logo{   /* background-color: blueviolet; */
+    display: flex;
+    gap: 15px;
+}
+.logo img{
+    width: 120px;
+}
+.logo h1{
+    display: flex;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content:baseline;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.namecontent ul{
+    display: flex;
+    gap: 30px;
+}
+.namecontent ul li{
+    list-style: none;
+    font-family:"serif";
+    font-size: 30px;
+}
+.namecontent ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.heading h1{
+    font-family: "Segoe UI";
+    font-size: 50px;
+}
+.peregraph p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button button{
+    margin-left: 100px;
+    height:10vh;
+    width: 30vw;
+    background-color: rgb(90, 151, 175);
+    border-color: skyblue;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: "segoe UI";
+    color: white;
+    font-weight:100px;
+}
+.downultraedit{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.downultraedit img{
+    width: 60px;
+    margin: 30px 10px;
+}
+.downultraedit h2{
+    font-size: 30px;
+    font-family: "segoe UI";
+    margin-right: 10px;
+}
+.Boxfirst{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box1{
+    gap: 20px;
+    height: 20vh;
+    width: 20vw;
+    background-color: rgb(18, 17, 17);
+    border-radius: 10px;
+}
+.box1 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "segoe UI";
+}
+.box1 button{
+    margin: 10px 15px;
+    padding:10px;
+    text-align:center;
+    font-family: "segoe UI";
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+.box2{
+    gap: 20px;
+    height: 20vh;
+    width: 20vw;
+    background-color: rgb(18, 17, 17);
+    border-radius: 10px;
+}
+.box2 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "segoe UI";
+}
+.box2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "segoe UI";
+}
+.box2 button{
+    margin: 15px;
+    padding:10px;
+    text-align: center;
+    font-family: "segoe UI";
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+.Boxsecond{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box3{
+    gap: 20px;
+    height: 20vh;
+    width: 20vw;
+    background-color: rgb(18, 17, 17);
+    border-radius: 10px;
+}
+.box3 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "segoe UI";
+}
+.box3 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "segoe UI";
+}
+.box3 button{
+    margin: 15px;
+    padding:10px;
+    text-align: center;
+    font-family: "segoe UI";
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+.box4{
+    gap: 20px;
+    height: 20vh;
+    width: 20vw;
+    background-color: rgb(18, 17, 17);
+    border-radius: 10px;
+}
+.box4 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "segoe UI";
+}
+.box4 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "segoe UI";
+}
+.box4 button{
+    margin: 15px;
+    padding:10px;
+    text-align: center;
+    font-family: "segoe UI";
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}
+footer{
+    background-color: rgb(22, 22, 22);
+    height: 50vh;
+    color: rgb(255, 245, 245);
+}
+.footerheading h1{
+    text-align: center;
+    font-size: 40px;
+    font-family:  "sans-serif";
+}
+.footerheading p{
+    text-align: center;
+    font-size: 20px;
+    font-family:  "sans-serif";
+}
+.form1{
+    margin-left: 550px;
+    align-items: center;
+    background-color:black;
+    width:20vw;
+    height: 30vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Subscribe{
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
